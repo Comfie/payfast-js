@@ -29,7 +29,7 @@ interface RedirectUrls {
   notify_url?: string | null;
 }
 
-class PayFastAPI {
+export class PayFastAPI {
 
   merchant_id: string;
   merchant_key: string;
@@ -101,5 +101,3 @@ class PayFastAPI {
   }
 
 }
-
-export default PayFastAPI;
