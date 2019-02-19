@@ -1,7 +1,7 @@
 {
-  "name": "payfast-js",
+  "name": "@gettruck/payfast-js",
   "version": "0.0.3",
-  "description": "A JavaScript wrapper around the PayFast API",
+  "description": "A JavaScript wrapper around the PayFast API that works in the browser and Node.js",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
