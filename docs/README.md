@@ -12,7 +12,7 @@ Working with the PayFast REST API is a nightmare. We had to do a whole bunch of 
 ```javascript
 const { PayFastAPI } = require("payfast-js");
 
-const payfast = new PayFastAPI({ merchant_id: "<id>", merchant_key: "<key>" });
+const payfast = new PayFastAPI({ merchant_id: "<id>", merchant_key: "<key>", production: true | false });
 ```
 
 #### Add payment details
