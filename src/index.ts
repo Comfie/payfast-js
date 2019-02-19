@@ -3,6 +3,7 @@ import * as buildUrl from "build-url";
 interface Config {
   merchant_id: string;
   merchant_key: string;
+  production: boolean;
 }
 
 interface PaymentDetails {
@@ -38,10 +39,10 @@ export class PayFastAPI {
   reference_details: ReferenceDetails;
   redirect_urls: RedirectUrls;
 
-  constructor({ merchant_id, merchant_key } : Config) {
+  constructor({ merchant_id, merchant_key, production } : Config) {
     this.merchant_id = merchant_id;
     this.merchant_key = merchant_key;
-    this.url = "https://sandbox.payfast.co.za/eng/process";
+    this.url = `https://${production ? "payfast" : "sandbox.payfast"}.co.za/eng/process`;
 
     this.payment_details = {
       amount: null,
