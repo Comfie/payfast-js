@@ -42,7 +42,7 @@ export class PayFastAPI {
   constructor({ merchant_id, merchant_key, production } : Config) {
     this.merchant_id = merchant_id;
     this.merchant_key = merchant_key;
-    this.url = `https://${production ? "payfast" : "sandbox.payfast"}.co.za/eng/process`;
+    this.url = `https://${production ? "www.payfast" : "sandbox.payfast"}.co.za/eng/process`;
 
     this.payment_details = {
       amount: null,
